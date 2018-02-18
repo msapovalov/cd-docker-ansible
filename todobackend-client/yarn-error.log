@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/local/Cellar/node/9.5.0/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js install --flat
+
+PATH: 
+  /anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/laps:/usr/local/munki
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "todo-backend-client",
+    "version": "1.0.0",
+    "description": "a TodoMVC client which uses a TodoBackend implementation to store its todos.",
+    "scripts": {
+      "prepublish": "grunt",
+      "build": "grunt",
+      "start": "open index.html || sensible-browser index.html || xdg-open index.html"
+      "postinstall": "bower install"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/TodoBackend/todo-backend-client.git"
+    },
+    "author": "Addy Osmani, Sindre Sorhus, Pascal Hartig, Stephen Sawchuk, Pete Hodgson",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/TodoBackend/todo-backend-client/issues"
+    },
+    "homepage": "https://github.com/TodoBackend/todo-backend-client",
+    "devDependencies": {
+      "grunt": "^0.4.5",
+      "grunt-bowercopy": "^1.2.0",
+      "grunt-contrib-clean": "^0.6.0"
+    },
+    "dependencies": {
+      "express": "^4.13.3"
+    }
+  
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/mihhail_shapovalov/todobackend-client/package.json: Unexpected string in JSON at position 307
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:92:30)
+      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:103:13
+      at <anonymous>
